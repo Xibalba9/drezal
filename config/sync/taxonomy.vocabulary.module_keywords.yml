@@ -1,0 +1,8 @@
+uuid: c6a76236-a01d-47ae-bfcb-0dfc3438f860
+langcode: en
+status: true
+dependencies: {  }
+name: 'Module keywords'
+vid: module_keywords
+description: ''
+weight: 0

@@ -1,0 +1,53 @@
+uuid: e3ab8a58-943c-4c24-9d11-3cb83058209b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.maintainers.body
+    - field.field.node.maintainers.field_drupal_profile
+    - field.field.node.maintainers.field_photo
+    - image.style.thumbnail
+    - node.type.maintainers
+  module:
+    - image
+    - link
+    - text
+    - user
+id: node.maintainers.teaser
+targetEntityType: node
+bundle: maintainers
+mode: teaser
+content:
+  body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_drupal_profile:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_photo:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  links: true

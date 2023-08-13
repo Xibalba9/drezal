@@ -1,0 +1,20 @@
+uuid: c8d7d308-e0c1-4829-ba15-edef8e9ef32e
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - node
+id: node.field_location_file_downloads
+field_name: field_location_file_downloads
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 3
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

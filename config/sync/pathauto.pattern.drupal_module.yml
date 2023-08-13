@@ -1,0 +1,22 @@
+uuid: 86ee225b-34c3-4682-b0d1-e455cd2e002c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: drupal_module
+label: 'Drupal module'
+type: 'canonical_entities:node'
+pattern: 'drupal-module/[node:title]'
+selection_criteria:
+  927ab492-88d6-449d-9561-1d35d4dc9a36:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 927ab492-88d6-449d-9561-1d35d4dc9a36
+    context_mapping:
+      node: node
+    bundles:
+      drupal_module: drupal_module
+selection_logic: and
+weight: -5
+relationships: {  }

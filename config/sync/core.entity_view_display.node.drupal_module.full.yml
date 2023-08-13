@@ -1,0 +1,260 @@
+uuid: 4ae57af7-ade8-4875-98e6-1eb6d2fdb249
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.drupal_module.body
+    - field.field.node.drupal_module.field_featured_video
+    - field.field.node.drupal_module.field_files
+    - field.field.node.drupal_module.field_image
+    - field.field.node.drupal_module.field_maintainers
+    - field.field.node.drupal_module.field_module_keywords
+    - field.field.node.drupal_module.field_module_type
+    - field.field.node.drupal_module.field_module_url
+    - image.style.media_library
+    - node.type.drupal_module
+  module:
+    - image
+    - layout_builder
+    - link
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: 'Layout Module'
+          context_mapping: {  }
+          column_widths: 75-25
+        components:
+          5f76dafd-d45c-483e-8a47-d7878d86107b:
+            uuid: 5f76dafd-d45c-483e-8a47-d7878d86107b
+            region: second
+            configuration:
+              id: 'field_block:node:drupal_module:field_image'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: media_library
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          785237a9-e954-42de-bb64-9ef011c339f3:
+            uuid: 785237a9-e954-42de-bb64-9ef011c339f3
+            region: second
+            configuration:
+              id: 'field_block:node:drupal_module:field_module_type'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: inline
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          329860b1-736a-4fbe-adf6-84ac4a85f506:
+            uuid: 329860b1-736a-4fbe-adf6-84ac4a85f506
+            region: first
+            configuration:
+              id: 'field_block:node:drupal_module:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          820e7c5b-1b78-459d-aa50-ffb17c7623aa:
+            uuid: 820e7c5b-1b78-459d-aa50-ffb17c7623aa
+            region: second
+            configuration:
+              id: 'field_block:node:drupal_module:field_module_url'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: link
+                label: inline
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          922b7446-a8b2-4b6d-982a-d5bbf9ec06ae:
+            uuid: 922b7446-a8b2-4b6d-982a-d5bbf9ec06ae
+            region: second
+            configuration:
+              id: 'extra_field_block:node:drupal_module:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 3
+            additional: {  }
+          2bf809f9-ecb8-4d52-899c-4b5682e6ddf1:
+            uuid: 2bf809f9-ecb8-4d52-899c-4b5682e6ddf1
+            region: second
+            configuration:
+              id: 'field_block:node:drupal_module:field_module_keywords'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          38cfa296-b96b-435f-ab75-d7b5ced155e6:
+            uuid: 38cfa296-b96b-435f-ab75-d7b5ced155e6
+            region: first
+            configuration:
+              id: 'field_block:node:drupal_module:field_featured_video'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: false
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          c5182029-8ba0-4d5c-8828-cf10749d1ff5:
+            uuid: c5182029-8ba0-4d5c-8828-cf10749d1ff5
+            region: first
+            configuration:
+              id: 'field_block:node:drupal_module:field_files'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: false
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          890a6349-6b9e-4a51-9cfa-4df882207c3d:
+            uuid: 890a6349-6b9e-4a51-9cfa-4df882207c3d
+            region: first
+            configuration:
+              id: 'field_block:node:drupal_module:field_maintainers'
+              label: Maintainers
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+        third_party_settings: {  }
+id: node.drupal_module.full
+targetEntityType: node
+bundle: drupal_module
+mode: full
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_featured_video:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_files:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: media_library
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_module_keywords:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_module_type:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_module_url:
+    type: link
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+hidden:
+  field_maintainers: true

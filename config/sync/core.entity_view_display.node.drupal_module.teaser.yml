@@ -1,0 +1,56 @@
+uuid: 97548116-50ee-4e6e-b41e-9239574a3102
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.drupal_module.body
+    - field.field.node.drupal_module.field_featured_video
+    - field.field.node.drupal_module.field_files
+    - field.field.node.drupal_module.field_image
+    - field.field.node.drupal_module.field_maintainers
+    - field.field.node.drupal_module.field_module_keywords
+    - field.field.node.drupal_module.field_module_type
+    - field.field.node.drupal_module.field_module_url
+    - image.style.thumbnail
+    - node.type.drupal_module
+  module:
+    - image
+    - text
+    - user
+id: node.drupal_module.teaser
+targetEntityType: node
+bundle: drupal_module
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 200
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  field_featured_video: true
+  field_files: true
+  field_maintainers: true
+  field_module_keywords: true
+  field_module_type: true
+  field_module_url: true

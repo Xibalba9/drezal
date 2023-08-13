@@ -1,0 +1,10 @@
+uuid: eebebed1-5d6a-4a25-966a-16d2018dbb68
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.token
+label: Token
+targetEntityType: media
+cache: true

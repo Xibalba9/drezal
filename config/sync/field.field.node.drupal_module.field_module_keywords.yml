@@ -1,0 +1,29 @@
+uuid: d4e78c09-4809-4f5b-bb55-5728ed52fa0a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_module_keywords
+    - node.type.drupal_module
+    - taxonomy.vocabulary.module_keywords
+id: node.drupal_module.field_module_keywords
+field_name: field_module_keywords
+entity_type: node
+bundle: drupal_module
+label: 'Module keywords'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      module_keywords: module_keywords
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

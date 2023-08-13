@@ -1,0 +1,22 @@
+uuid: 48f60c98-599d-4fd1-986e-dabcf45b317d
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: amenities
+label: Amenities
+type: 'canonical_entities:taxonomy_term'
+pattern: 'amenities/[term:name]'
+selection_criteria:
+  0ef38a71-a21f-4274-88db-27fa2bb2bfab:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: 0ef38a71-a21f-4274-88db-27fa2bb2bfab
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      amenities: amenities
+selection_logic: and
+weight: -5
+relationships: {  }

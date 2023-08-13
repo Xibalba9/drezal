@@ -1,0 +1,143 @@
+uuid: 4f476ca3-eb58-4ccd-bb5b-3579cfc999f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.maintainers.body
+    - field.field.node.maintainers.field_drupal_profile
+    - field.field.node.maintainers.field_photo
+    - image.style.media_library
+    - node.type.maintainers
+  module:
+    - image
+    - layout_builder
+    - layout_discovery
+    - link
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: 'Layout Maintainer'
+          context_mapping: {  }
+          column_widths: 25-75
+        components:
+          08212796-e519-4741-881c-417eb331fef3:
+            uuid: 08212796-e519-4741-881c-417eb331fef3
+            region: first
+            configuration:
+              id: 'field_block:node:maintainers:field_photo'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: media_library
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          1d725d39-20e8-47fc-bfeb-c7ed64fce621:
+            uuid: 1d725d39-20e8-47fc-bfeb-c7ed64fce621
+            region: second
+            configuration:
+              id: 'field_block:node:maintainers:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          705437d5-6424-4653-a49c-abe83ca44f74:
+            uuid: 705437d5-6424-4653-a49c-abe83ca44f74
+            region: first
+            configuration:
+              id: 'field_block:node:maintainers:field_drupal_profile'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: link
+                label: inline
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          58d43125-21d2-4032-b11f-a7be6d73f40f:
+            uuid: 58d43125-21d2-4032-b11f-a7be6d73f40f
+            region: first
+            configuration:
+              id: 'extra_field_block:node:maintainers:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components: {  }
+        third_party_settings: {  }
+id: node.maintainers.full
+targetEntityType: node
+bundle: maintainers
+mode: full
+content:
+  body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_drupal_profile:
+    type: link
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_photo:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: media_library
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  field_modules: true

@@ -1,0 +1,45 @@
+uuid: 94a68b75-70d9-4fb9-aade-909b0aec0ff0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.maintainers.body
+    - field.field.node.maintainers.field_drupal_profile
+    - field.field.node.maintainers.field_photo
+    - image.style.thumbnail
+    - node.type.maintainers
+  module:
+    - image
+    - link
+    - user
+id: node.maintainers.default
+targetEntityType: node
+bundle: maintainers
+mode: default
+content:
+  field_drupal_profile:
+    type: link
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_photo:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  links: true

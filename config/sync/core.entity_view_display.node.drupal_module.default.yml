@@ -1,0 +1,103 @@
+uuid: 516733c9-9c8d-4793-b33e-5e1f5c01ed4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.drupal_module.body
+    - field.field.node.drupal_module.field_featured_video
+    - field.field.node.drupal_module.field_files
+    - field.field.node.drupal_module.field_image
+    - field.field.node.drupal_module.field_maintainers
+    - field.field.node.drupal_module.field_module_keywords
+    - field.field.node.drupal_module.field_module_type
+    - field.field.node.drupal_module.field_module_url
+    - image.style.media_library
+    - node.type.drupal_module
+  module:
+    - image
+    - link
+    - text
+    - user
+id: node.drupal_module.default
+targetEntityType: node
+bundle: drupal_module
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_featured_video:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_files:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: media_library
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_maintainers:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_module_keywords:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_module_type:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_module_url:
+    type: link
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+hidden: {  }

@@ -1,0 +1,22 @@
+uuid: a4d7081b-954c-4acc-bfce-86790e7f26e1
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: drupal_module_type
+label: 'Drupal module type'
+type: 'canonical_entities:node'
+pattern: 'drupal-module-type/[node:title]'
+selection_criteria:
+  f9109a1b-1d8d-410c-8faa-56a053fc2b0b:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: f9109a1b-1d8d-410c-8faa-56a053fc2b0b
+    context_mapping:
+      node: node
+    bundles:
+      drupal_module_types: drupal_module_types
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,26 @@
+uuid: 2800539d-9789-4d3c-8553-9fb97e7cb6ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - filter.format.basic_html
+    - node.type.maintainers
+  module:
+    - text
+id: node.maintainers.body
+field_name: body
+entity_type: node
+bundle: maintainers
+label: Bio
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats:
+    - basic_html
+field_type: text_with_summary

@@ -1,0 +1,34 @@
+uuid: 5a4472e6-a259-4f13-a96e-ee93311720a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.drupal_module_types.body
+    - field.field.node.drupal_module_types.field_document
+    - field.field.node.drupal_module_types.field_type
+    - node.type.drupal_module_types
+  module:
+    - text
+    - user
+id: node.drupal_module_types.teaser
+targetEntityType: node
+bundle: drupal_module_types
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_document: true
+  field_type: true

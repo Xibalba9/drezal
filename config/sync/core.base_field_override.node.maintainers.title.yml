@@ -1,0 +1,18 @@
+uuid: 3c9c69ca-c35e-456d-973e-860f88e34041
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.maintainers
+id: node.maintainers.title
+field_name: title
+entity_type: node
+bundle: maintainers
+label: 'Maintainer Name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

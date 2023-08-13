@@ -1,0 +1,22 @@
+uuid: 04d4e0c5-d31d-4132-8d29-fef746edaa35
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: events_categories
+label: 'Events categories'
+type: 'canonical_entities:taxonomy_term'
+pattern: 'events-catedory/[term:name]'
+selection_criteria:
+  2b7e3b6c-2a9d-47e0-8f74-d9d2970c93b8:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: 2b7e3b6c-2a9d-47e0-8f74-d9d2970c93b8
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      events_categories: events_categories
+selection_logic: and
+weight: -5
+relationships: {  }

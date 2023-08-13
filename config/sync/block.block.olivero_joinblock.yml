@@ -1,0 +1,25 @@
+uuid: 351d987f-8b55-4b38-bc3a-cdeb9e2455bd
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e51790a9-2903-4648-a732-3cdcf4a1f835'
+  module:
+    - block_content
+  theme:
+    - olivero
+id: olivero_joinblock
+theme: olivero
+region: footer_top
+weight: 0
+provider: null
+plugin: 'block_content:e51790a9-2903-4648-a732-3cdcf4a1f835'
+settings:
+  id: 'block_content:e51790a9-2903-4648-a732-3cdcf4a1f835'
+  label: 'Join Block'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

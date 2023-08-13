@@ -1,0 +1,19 @@
+uuid: 01233c39-21bb-49bb-8aca-2b58853188cc
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_maintainers
+field_name: field_maintainers
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

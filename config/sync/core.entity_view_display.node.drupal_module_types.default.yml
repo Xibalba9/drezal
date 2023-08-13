@@ -1,0 +1,47 @@
+uuid: 069867f6-314a-46d2-a674-64c86e532ad3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.drupal_module_types.body
+    - field.field.node.drupal_module_types.field_document
+    - field.field.node.drupal_module_types.field_type
+    - node.type.drupal_module_types
+  module:
+    - text
+    - user
+id: node.drupal_module_types.default
+targetEntityType: node
+bundle: drupal_module_types
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_document:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

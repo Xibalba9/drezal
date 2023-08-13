@@ -1,0 +1,24 @@
+uuid: d1c7eeda-dbe7-452e-9229-f2bf0ea45159
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.drupal_module_types
+  module:
+    - text
+id: node.drupal_module_types.body
+field_name: body
+entity_type: node
+bundle: drupal_module_types
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

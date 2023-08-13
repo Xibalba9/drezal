@@ -1,0 +1,17 @@
+uuid: 27fe300b-3b3f-47dd-8d6d-5d54df6cc0ea
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Event
+type: event
+description: 'Use this content type to create new event nodes.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,29 @@
+uuid: cfe3996e-4b2f-4083-b1ad-25fdd7111b8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location_video
+    - media.type.remote_video
+    - node.type.location
+id: node.location.field_location_video
+field_name: field_location_video
+entity_type: node
+bundle: location
+label: 'Location Video'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      remote_video: remote_video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

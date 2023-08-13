@@ -1,0 +1,23 @@
+uuid: a3f30bd7-25f9-4acb-ac71-661b5f28b853
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_drupal_profile
+    - node.type.maintainers
+  module:
+    - link
+id: node.maintainers.field_drupal_profile
+field_name: field_drupal_profile
+entity_type: node
+bundle: maintainers
+label: Links
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

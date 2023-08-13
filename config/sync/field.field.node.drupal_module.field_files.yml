@@ -1,0 +1,29 @@
+uuid: 7da36141-8227-4a57-a578-74465e8f7fd6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_files
+    - media.type.document
+    - node.type.drupal_module
+id: node.drupal_module.field_files
+field_name: field_files
+entity_type: node
+bundle: drupal_module
+label: Files
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

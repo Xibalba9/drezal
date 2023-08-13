@@ -1,0 +1,26 @@
+uuid: 7f8d0934-a0cb-43ed-9c9f-d4209f42e876
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_mailing_address
+  module:
+    - address
+    - user
+id: user.user.field_mailing_address
+field_name: field_mailing_address
+entity_type: user
+bundle: user
+label: 'Mailing address'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries:
+    US: US
+  langcode_override: ''
+  field_overrides: {  }
+  fields: {  }
+field_type: address

@@ -1,0 +1,17 @@
+uuid: 72516a45-333a-405d-b446-9722d5bb6a9e
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Drupal module type'
+type: drupal_module_types
+description: 'Use this content type to create new module type nodes.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

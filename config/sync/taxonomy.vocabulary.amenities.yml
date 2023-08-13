@@ -1,0 +1,8 @@
+uuid: 2423ec74-b3cf-4285-8848-cf486a4b12e4
+langcode: en
+status: true
+dependencies: {  }
+name: Amenities
+vid: amenities
+description: ''
+weight: 0

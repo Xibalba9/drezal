@@ -1,0 +1,29 @@
+uuid: 0ed52a76-515d-4fc3-ac2e-c25a9ee4b01c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_featured_video
+    - media.type.remote_video
+    - node.type.drupal_module
+id: node.drupal_module.field_featured_video
+field_name: field_featured_video
+entity_type: node
+bundle: drupal_module
+label: 'Featured Video'
+description: 'Select the YouTube or Vimeo video you want to highlight (you can add one to Media Manager from here).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      remote_video: remote_video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

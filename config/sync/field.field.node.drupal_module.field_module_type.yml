@@ -1,0 +1,29 @@
+uuid: d5f7e38a-4369-44c3-8b16-f064a2cc7959
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_module_type
+    - node.type.drupal_module
+    - taxonomy.vocabulary.module_types
+id: node.drupal_module.field_module_type
+field_name: field_module_type
+entity_type: node
+bundle: drupal_module
+label: 'Module type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      module_types: module_types
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

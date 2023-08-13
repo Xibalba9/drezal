@@ -1,0 +1,17 @@
+uuid: 53e64295-421f-4e20-b794-96dee3d156b0
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Maintainer
+type: maintainers
+description: 'Use this content type to create Drupal module maintainer nodes.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

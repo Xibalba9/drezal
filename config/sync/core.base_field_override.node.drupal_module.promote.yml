@@ -1,0 +1,22 @@
+uuid: d2551e20-01a1-46c6-ad83-e7c5099d03db
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.drupal_module
+id: node.drupal_module.promote
+field_name: promote
+entity_type: node
+bundle: drupal_module
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,8 @@
+uuid: 91fb17ae-4dfa-48c2-bdd4-fb945e0aff2f
+langcode: en
+status: true
+dependencies: {  }
+name: 'Module types'
+vid: module_types
+description: 'Use module types to group Drupal module on similar topics into categories.'
+weight: 0

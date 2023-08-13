@@ -1,0 +1,22 @@
+uuid: 9faa2c2c-1542-4616-bd95-ced059000a9e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: maintainers
+label: Maintainers
+type: 'canonical_entities:node'
+pattern: 'maintainer/[node:title]'
+selection_criteria:
+  98157941-0d5e-49b9-947a-daac3f16d0b3:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 98157941-0d5e-49b9-947a-daac3f16d0b3
+    context_mapping:
+      node: node
+    bundles:
+      maintainers: maintainers
+selection_logic: and
+weight: -5
+relationships: {  }
