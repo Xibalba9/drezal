@@ -1,0 +1,5 @@
+name: "Hello World"
+type: module
+description: "This example creates the classic &quot;Hello, World!&quot; module for Drupal. The result of this example is a module that provides a new route (and path) to a page that displays a simple &quot;Hello, World!&quot; message."
+package: Reza Custom
+core_version_requirement: ^9 | ^10
