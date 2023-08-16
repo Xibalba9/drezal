@@ -24,6 +24,7 @@
         "drupal/devel": "^5.0",
         "drupal/extlink": "^1.7",
         "drupal/fullcalendar_view": "^5.1",
+        "drupal/paragraphs": "^1.15",
         "drupal/pathauto": "^1.11",
         "drupal/redirect": "^1.8",
         "drupal/scheduler": "^2.0",
