@@ -1,0 +1,22 @@
+uuid: 25c4da1c-69ab-4eb7-8e07-227a5da1af73
+langcode: en
+status: true
+dependencies:
+  theme:
+    - rezatheme
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: rezatheme_primary_local_tasks
+theme: rezatheme
+region: highlighted
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

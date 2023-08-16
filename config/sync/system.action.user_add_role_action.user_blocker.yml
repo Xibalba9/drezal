@@ -1,0 +1,14 @@
+uuid: ff620337-af42-44ca-9243-7f105793b0bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.user_blocker
+  module:
+    - user
+id: user_add_role_action.user_blocker
+label: 'Add the User blocker role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: user_blocker

@@ -11,9 +11,12 @@ dependencies:
     - field.field.node.event.field_event_video
     - field.field.node.event.field_event_website
     - field.field.node.event.field_events_category
+    - field.field.node.event.field_image
+    - image.style.thumbnail
     - node.type.event
   module:
     - datetime
+    - image
     - link
     - media_library
     - path
@@ -89,6 +92,14 @@ content:
     weight: 1
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_image:
+    type: image_image
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
   path:
     type: path

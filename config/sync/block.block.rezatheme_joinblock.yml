@@ -1,0 +1,25 @@
+uuid: 8fe73034-2f61-4034-9649-4d4990737ba1
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e51790a9-2903-4648-a732-3cdcf4a1f835'
+  module:
+    - block_content
+  theme:
+    - rezatheme
+id: rezatheme_joinblock
+theme: rezatheme
+region: sidebar_first
+weight: -7
+provider: null
+plugin: 'block_content:e51790a9-2903-4648-a732-3cdcf4a1f835'
+settings:
+  id: 'block_content:e51790a9-2903-4648-a732-3cdcf4a1f835'
+  label: 'Join Block'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

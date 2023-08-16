@@ -1,0 +1,22 @@
+uuid: 14f3cc5d-4f2a-4d3e-b543-be763e4001a5
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - rezatheme
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: rezatheme_content
+theme: rezatheme
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

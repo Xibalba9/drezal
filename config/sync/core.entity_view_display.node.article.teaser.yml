@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.article.body
     - field.field.node.article.comment
+    - field.field.node.article.field_audio
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
     - image.style.medium
@@ -13,6 +14,7 @@ dependencies:
   module:
     - image
     - layout_builder
+    - layout_discovery
     - text
     - user
 third_party_settings:
@@ -128,3 +130,4 @@ content:
     region: content
 hidden:
   comment: true
+  field_audio: true

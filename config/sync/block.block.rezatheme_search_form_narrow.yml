@@ -1,0 +1,23 @@
+uuid: 60aed287-bd3f-4a6d-a34b-12a55144237b
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - rezatheme
+_core:
+  default_config_hash: yEBET0cqDbk8dkWzaJw-8CKft0961VBflsISoSR6Lj8
+id: rezatheme_search_form_narrow
+theme: rezatheme
+region: primary_menu
+weight: -8
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (narrow)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

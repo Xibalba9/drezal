@@ -1,0 +1,23 @@
+uuid: eef3c7ef-c479-4d43-a177-dcec5accde76
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  theme:
+    - rezatheme
+_core:
+  default_config_hash: 0gq3VPg-_UM69FCCWurLFIrrnIjC2HLKhwo9iQNtcUo
+id: rezatheme_syndicate
+theme: rezatheme
+region: footer_second
+weight: -9
+provider: null
+plugin: node_syndicate_block
+settings:
+  id: node_syndicate_block
+  label: 'RSS feed'
+  label_display: '0'
+  provider: node
+  block_count: 10
+visibility: {  }

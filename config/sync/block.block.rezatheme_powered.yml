@@ -1,0 +1,22 @@
+uuid: 98062afe-c9bc-4bb1-a2a1-c8d11cd60a86
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - rezatheme
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: rezatheme_powered
+theme: rezatheme
+region: footer_first
+weight: -9
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

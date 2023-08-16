@@ -1,0 +1,22 @@
+uuid: e33ed0cf-9953-4ee7-8cf2-0efe08e8cfe4
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - rezatheme
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: rezatheme_breadcrumbs
+theme: rezatheme
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

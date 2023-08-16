@@ -1,0 +1,22 @@
+uuid: 44602fea-e951-4b61-9b91-d57535daaf3f
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - rezatheme
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: rezatheme_help
+theme: rezatheme
+region: top_header_form
+weight: -9
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

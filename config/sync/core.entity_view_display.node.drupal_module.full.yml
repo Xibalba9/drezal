@@ -32,25 +32,6 @@ third_party_settings:
           context_mapping: {  }
           column_widths: 75-25
         components:
-          5f76dafd-d45c-483e-8a47-d7878d86107b:
-            uuid: 5f76dafd-d45c-483e-8a47-d7878d86107b
-            region: second
-            configuration:
-              id: 'field_block:node:drupal_module:field_image'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: image
-                label: hidden
-                settings:
-                  image_link: ''
-                  image_style: media_library
-                  image_loading:
-                    attribute: lazy
-                third_party_settings: {  }
-            weight: 0
-            additional: {  }
           785237a9-e954-42de-bb64-9ef011c339f3:
             uuid: 785237a9-e954-42de-bb64-9ef011c339f3
             region: second
@@ -65,22 +46,7 @@ third_party_settings:
                 settings:
                   link: true
                 third_party_settings: {  }
-            weight: 1
-            additional: {  }
-          329860b1-736a-4fbe-adf6-84ac4a85f506:
-            uuid: 329860b1-736a-4fbe-adf6-84ac4a85f506
-            region: first
-            configuration:
-              id: 'field_block:node:drupal_module:body'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: text_default
-                label: hidden
-                settings: {  }
-                third_party_settings: {  }
-            weight: 0
+            weight: 2
             additional: {  }
           820e7c5b-1b78-459d-aa50-ffb17c7623aa:
             uuid: 820e7c5b-1b78-459d-aa50-ffb17c7623aa
@@ -100,7 +66,7 @@ third_party_settings:
                   rel: ''
                   target: ''
                 third_party_settings: {  }
-            weight: 2
+            weight: 4
             additional: {  }
           922b7446-a8b2-4b6d-982a-d5bbf9ec06ae:
             uuid: 922b7446-a8b2-4b6d-982a-d5bbf9ec06ae
@@ -110,7 +76,7 @@ third_party_settings:
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-            weight: 3
+            weight: 5
             additional: {  }
           2bf809f9-ecb8-4d52-899c-4b5682e6ddf1:
             uuid: 2bf809f9-ecb8-4d52-899c-4b5682e6ddf1
@@ -126,7 +92,7 @@ third_party_settings:
                 settings:
                   link: true
                 third_party_settings: {  }
-            weight: 4
+            weight: 6
             additional: {  }
           38cfa296-b96b-435f-ab75-d7b5ced155e6:
             uuid: 38cfa296-b96b-435f-ab75-d7b5ced155e6
@@ -162,9 +128,43 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 4
             additional: {  }
+          5f76dafd-d45c-483e-8a47-d7878d86107b:
+            uuid: 5f76dafd-d45c-483e-8a47-d7878d86107b
+            region: first
+            configuration:
+              id: 'field_block:node:drupal_module:field_image'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: media_library
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          329860b1-736a-4fbe-adf6-84ac4a85f506:
+            uuid: 329860b1-736a-4fbe-adf6-84ac4a85f506
+            region: second
+            configuration:
+              id: 'field_block:node:drupal_module:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
           890a6349-6b9e-4a51-9cfa-4df882207c3d:
             uuid: 890a6349-6b9e-4a51-9cfa-4df882207c3d
-            region: first
+            region: second
             configuration:
               id: 'field_block:node:drupal_module:field_maintainers'
               label: Maintainers

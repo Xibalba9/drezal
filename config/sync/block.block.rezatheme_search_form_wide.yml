@@ -1,0 +1,23 @@
+uuid: a7d2f12f-c188-435d-b1a9-73c08ea12f1e
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - rezatheme
+_core:
+  default_config_hash: imMyHD6LYci0gtXq56qr9ZKGHzbEG9uFydrN5EhKtSU
+id: rezatheme_search_form_wide
+theme: rezatheme
+region: secondary_menu
+weight: -8
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (wide)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

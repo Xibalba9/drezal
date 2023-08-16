@@ -12,8 +12,11 @@ dependencies:
     - field.field.node.event.field_event_video
     - field.field.node.event.field_event_website
     - field.field.node.event.field_events_category
+    - field.field.node.event.field_image
+    - image.style.medium
     - node.type.event
   module:
+    - image
     - text
     - user
 id: node.event.teaser
@@ -28,6 +31,17 @@ content:
       trim_length: 600
     third_party_settings: {  }
     weight: 101
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 102
     region: content
   links:
     settings: {  }

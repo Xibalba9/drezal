@@ -11,7 +11,7 @@ dependencies:
 id: olivero_modules
 theme: olivero
 region: sidebar
-weight: -7
+weight: -9
 provider: null
 plugin: 'system_menu_block:modules'
 settings:

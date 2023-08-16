@@ -1,0 +1,14 @@
+uuid: 6f334b4e-c778-4e55-ab38-1a44f7bc2a8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.user_blocker
+  module:
+    - user
+id: user_remove_role_action.user_blocker
+label: 'Remove the User blocker role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: user_blocker

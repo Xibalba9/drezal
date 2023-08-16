@@ -1,0 +1,29 @@
+uuid: 717443ea-e845-49ef-8811-8f35aca4ed2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.modules
+  module:
+    - system
+  theme:
+    - rezatheme
+id: rezatheme_modules
+theme: rezatheme
+region: sidebar_first
+weight: -9
+provider: null
+plugin: 'system_menu_block:modules'
+settings:
+  id: 'system_menu_block:modules'
+  label: Modules
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
