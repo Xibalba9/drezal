@@ -1,0 +1,7 @@
+name: 'User Blocker'
+type: module
+description: 'Allows privileged users the ability to block other users.'
+package: Reza Custom
+core_version_requirement: ^10
+dependencies:
+  - drupal:user
