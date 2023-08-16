@@ -4,4 +4,4 @@ description: "HTML5 audio field formatter for Link fields."
 package: Reza Custom
 core_version_requirement: ^9 || ^10
 dependencies:
-  - drupal:link
+  - link:link

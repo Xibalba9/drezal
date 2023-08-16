@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types = 1);
 
 namespace Drupal\html5_audio\Plugin\Field\FieldFormatter;
 
@@ -17,14 +17,12 @@ use Drupal\Core\Form\FormStateInterface;
  *   }
  * )
  */
-class Html5AudioFieldFormatter extends FormatterBase
-{
+final class Html5AudioFieldFormatter extends FormatterBase {
 
   /**
    * {@inheritdoc}
    */
-  public static function defaultSettings()
-  {
+  public static function defaultSettings() {
     return [
       'autoplay' => '0',
     ] + parent::defaultSettings();
@@ -33,13 +31,12 @@ class Html5AudioFieldFormatter extends FormatterBase
   /**
    * {@inheritdoc}
    */
-  public function settingsForm(array $form, FormStateInterface $form_state)
-  {
+  public function settingsForm(array $form, FormStateInterface $form_state) {
 
     $elements['autoplay'] = [
       '#type' => 'checkbox',
       '#title' => $this->t('Autoplay enabled'),
-      '#default_value' => $this->getSetting('Autoplay'),
+      '#default_value' => $this->getSetting('autoplay'),
     ];
 
     return $elements;
@@ -63,8 +60,7 @@ class Html5AudioFieldFormatter extends FormatterBase
   /**
    * {@inheritdoc}
    */
-  public function viewElements(FieldItemListInterface $items, $langcode)
-  {
+  public function viewElements(FieldItemListInterface $items, $langcode) {
     $element = [];
 
     // Render all field values as part of a single <audio> tag.
@@ -78,21 +74,22 @@ class Html5AudioFieldFormatter extends FormatterBase
       ];
     }
 
-    //Configuration
+    // Configuration.
     $autoplay = '';
     if ($this->getSetting('autoplay')) {
       $autoplay = 'autoplay';
     }
 
-    // Put everything in a render array for theming.
+    // Create render array for theming.
     $element[] = [
       '#theme' => 'audio_tag',
       '#sources' => $sources,
-      '#autoplay' =>$autoplay,
+      '#autoplay' => $autoplay,
     ];
 
     dpm($element);
 
     return $element;
   }
+
 }
